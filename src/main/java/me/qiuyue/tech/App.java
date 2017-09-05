@@ -21,7 +21,7 @@ public class App {
     throws IOException {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(App.class);
         PowershellUtil psutil = (PowershellUtil)ctx.getBean(PowershellUtil.class);
-        psutil.executeRegularCommand("ls -la", "", "");
+        psutil.executeRegularCommand("ls ~", "~", "~");
     }
 
     @Bean
